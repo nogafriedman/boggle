@@ -1,0 +1,27 @@
+Boggle Game features:
+
+- Main menu window as an aesthetic entry to the game:
+The main menu has a score board (extra feature) that shows the top 3 scores of all time, by player name
+and score. The score board is loaded with each run of the game root from a file in the exercise folder
+/Resources/Data and the updated data is saved to the file when closing the game.
+Before entering the game you can insert your name in the presented box,
+if no name is inserted- the default name that's going to show on the score board is 'No_Name'.
+
+- Main gamepley window:
+After pressing "Start Game" the window changes and the randomized board appears, a timer of 3 minutes
+starts running.
+On the right side of the frame are a few labels:
+the timer, the current score, the word currently being formed (all of the currently pressed buttons),
+and the words found so far (all features requested in the exercise instructions).
+We added two separate buttons for easier control of the gameplay - Check Word and Reset Word.
+Any button pressed by the player on the board changes it's color to differ itself from the unpressed buttons
+on the board.
+
+More extra features:
+- We also tried to add a convenient interface, which includes an intuitive indicator for when a player 
+presses an invalid button (either already pressed or not compatible with last pick) - The button turns red
+for a few seconds and then goes back to the default "unpressed" color.
+- When a word is guessed correctly, a "Correct!" message appears for a few seconds on the frame.
+When a word is guessed but has been found already earlier in the game (in the same path or a different one),
+a matching message appears ("Already found!") and when a word guessed doesn't appear in the loaded
+dictionary (not a word according to the game), a matching message appears as well.
